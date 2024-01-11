@@ -14,10 +14,12 @@ public class Job {
     // TODO: Add two constructors - one to initialize a unique ID and a second to initialize the
     //  other five fields. The second constructor should also call the first in order to initialize
     //  the 'id' field.
-    public Job(int id) {
-        this.id = nextId;  }
+    public Job() {
+        id = nextId;
+        nextId++;
+    }
     public Job(String name, Employer employer, Location location, PositionType positionType, CoreCompetency coreCompetency) {
-        this.id = nextId;
+        this();
         this.name = name;
         this.employer = employer;
         this.location = location;
