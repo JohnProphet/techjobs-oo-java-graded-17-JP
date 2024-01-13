@@ -11,9 +11,9 @@ public class Job {
     private PositionType positionType;
     private CoreCompetency coreCompetency;
 
-    // TODO: Add two constructors - one to initialize a unique ID and a second to initialize the
-    //  other five fields. The second constructor should also call the first in order to initialize
-    //  the 'id' field.
+    // Initialize a unique ID and a second to initialize the other five
+    //  fields. The second constructor calls the first in order to
+    //  initialize the 'id' field.
     public Job() {
         id = nextId;
         nextId++;
@@ -41,6 +41,11 @@ public class Job {
     @Override
     public int hashCode() {
         return Objects.hash(getId());
+    }
+
+    @Override
+    public String toString() {
+        return System.lineSeparator();
     }
 
     // TODO: Add getters for each field EXCEPT nextId. Add setters for each field EXCEPT nextID
