@@ -2,6 +2,8 @@ package org.launchcode.techjobs.oo;
 
 import java.util.Objects;
 
+import static java.lang.System.lineSeparator;
+
 public class Job {
     private int id;
     private static int nextId = 1;
@@ -10,6 +12,8 @@ public class Job {
     private Location location;
     private PositionType positionType;
     private CoreCompetency coreCompetency;
+
+    private static String empty = "Data not available";
 
     // Initialize a unique ID and a second to initialize the other five
     //  fields. The second constructor calls the first in order to
@@ -25,7 +29,7 @@ public class Job {
         this.location = location;
         this.positionType = positionType;
         this.coreCompetency = coreCompetency;
-        nextId++;
+//        nextId++;
     }
 
     // TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields
@@ -45,8 +49,19 @@ public class Job {
 
     @Override
     public String toString() {
-        return System.lineSeparator();
-    }
+        return lineSeparator() +
+                "ID:  " + this.id + lineSeparator() +
+                "Name:  " + this.name + lineSeparator() +
+                "Employer:  " + this.employer + lineSeparator() +
+                "Location:  " + this.location + lineSeparator() +
+                "Position Type:  " + this.positionType + lineSeparator() +
+                "Core Competency:  " + this.coreCompetency + lineSeparator();
+//        name == null ? empty : name,
+//        employer == null ? empty : employer,
+//        location == null ? empty : location,
+//        positionType == null ? empty : positionType,
+//        coreCompetency == null ? empty : coreCompetency;
+        }
 
     // TODO: Add getters for each field EXCEPT nextId. Add setters for each field EXCEPT nextID
     //  and id.
