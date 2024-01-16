@@ -50,17 +50,12 @@ public class Job {
     @Override
     public String toString() {
         return lineSeparator() +
-                "ID:  " + this.id + lineSeparator() +
-                "Name:  " + this.name + lineSeparator() +
-                "Employer:  " + this.employer + lineSeparator() +
-                "Location:  " + this.location + lineSeparator() +
-                "Position Type:  " + this.positionType + lineSeparator() +
-                "Core Competency:  " + this.coreCompetency + lineSeparator();
-//        name == null ? empty : name,
-//        employer == null ? empty : employer,
-//        location == null ? empty : location,
-//        positionType == null ? empty : positionType,
-//        coreCompetency == null ? empty : coreCompetency;
+                "ID: " + this.id + lineSeparator() +
+                "Name: " + this.name + lineSeparator() +
+                "Employer: " + this.employer + lineSeparator() +
+                "Location: " + this.location + lineSeparator() +
+                "Position Type: " + this.positionType + lineSeparator() +
+                "Core Competency: " + this.coreCompetency + lineSeparator();
         }
 
     // TODO: Add getters for each field EXCEPT nextId. Add setters for each field EXCEPT nextID

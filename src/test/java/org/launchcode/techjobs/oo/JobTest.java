@@ -33,12 +33,12 @@ public class JobTest {
     public void testToStringStartsAndEndsWithNewLine() {
         Job job1 = new Job("TestJob", new Employer("LaunchCode"), new Location("StL"), new PositionType("TestPosition"), new CoreCompetency("test"));
         assertEquals(job1.toString(), lineSeparator() +
-                "ID:  " + job1.getId() + lineSeparator() +
-                "Name:  TestJob" + lineSeparator() +
-                "Employer:  LaunchCode" + lineSeparator() +
-                "Location:  StL" + lineSeparator() +
-                "Position Type:  TestPosition" + lineSeparator() +
-                "Core Competency:  test" + lineSeparator());
+                "ID: " + job1.getId() + lineSeparator() +
+                "Name: TestJob" + lineSeparator() +
+                "Employer: LaunchCode" + lineSeparator() +
+                "Location: StL" + lineSeparator() +
+                "Position Type: TestPosition" + lineSeparator() +
+                "Core Competency: test" + lineSeparator());
     }
 
     @Test
