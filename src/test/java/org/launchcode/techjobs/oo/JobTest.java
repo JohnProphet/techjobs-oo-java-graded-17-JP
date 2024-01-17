@@ -26,20 +26,16 @@ public class JobTest {
     public void testJobsForEquality() {
         Job job1 = new Job("Web Graphics", new Employer("CodeLaunch"), new Location("LtS"), new PositionType("Front-end developer"), new CoreCompetency("Java"));
         Job job2 = new Job("Web Graphics", new Employer("CodeLaunch"), new Location("LtS"), new PositionType("Front-end developer"), new CoreCompetency("Java"));
-        assertFalse(job1 == job2);
+        assertEquals(job1.toString(), job2.toString());
     }
 
     @Test
     public void testToStringStartsAndEndsWithNewLine() {
         Job job1 = new Job("TestJob", new Employer("LaunchCode"), new Location("StL"), new PositionType("TestPosition"), new CoreCompetency("test"));
-        assertEquals(job1.toString(), lineSeparator() +
-                "ID: " + job1.getId() + lineSeparator() +
-                "Name: TestJob" + lineSeparator() +
-                "Employer: LaunchCode" + lineSeparator() +
-                "Location: StL" + lineSeparator() +
-                "Position Type: TestPosition" + lineSeparator() +
-                "Core Competency: test" + lineSeparator());
+        assertTrue(job1.toString().startsWith(lineSeparator()));
+        assertTrue(job1.toString().endsWith(lineSeparator()));
     }
+
 
     @Test
     public void testToStringContainsCorrectLabelsAndData() {
