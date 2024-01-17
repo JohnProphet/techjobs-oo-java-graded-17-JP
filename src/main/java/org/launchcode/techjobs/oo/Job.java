@@ -39,19 +39,6 @@ public class Job {
     @Override
     public String toString() {
 
-//        if (employer.getValue() == "") {
-//            this.employer.setValue(empty);
-//        }
-//        if (location.getValue() == "") {
-//            this.location.setValue(empty);
-//        }
-//        if (positionType.getValue() == "") {
-//            this.positionType.setValue(empty);
-//        }
-//        if (coreCompetency.getValue() == "") {
-//            this.coreCompetency.setValue(empty);
-//        }
-
         return lineSeparator() +
                 "ID: " + this.id + lineSeparator() +
                 "Name: " + this.name + lineSeparator() +
