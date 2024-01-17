@@ -2,7 +2,7 @@ package org.launchcode.techjobs.oo;
 import java.util.Objects;
 
 abstract class JobField {
-    private int id;
+    private final int id;
     private static int nextId=1;
     private String value;
 
@@ -35,7 +35,7 @@ abstract class JobField {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+//    public void setId(int id) {
+//        this.id = id;
+//    }
 }
