@@ -19,7 +19,7 @@ public class JobTest {
 
     @Test
     public void testJobConstructorSetsAllFields() {
-        new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+        new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality Control"), new CoreCompetency("Persistence"));
     }
 
     @Test
