@@ -1,7 +1,5 @@
 package org.launchcode.techjobs.oo;
-
 import java.util.Objects;
-
 import static java.lang.System.lineSeparator;
 
 public class Job {
@@ -12,17 +10,12 @@ public class Job {
     private Location location;
     private PositionType positionType;
     private CoreCompetency coreCompetency;
-
     private static final String empty = "Data not available";
 
-    // Initialize a unique ID and a second to initialize the other five
-    //  fields. The second constructor calls the first in order to
-    //  initialize the 'id' field.
     public Job() {
         id = nextId;
         nextId++;
     }
-
     public Job(String name, Employer employer, Location location, PositionType positionType, CoreCompetency coreCompetency) {
         this();
         this.name = name;
@@ -30,11 +23,7 @@ public class Job {
         this.location = location;
         this.positionType = positionType;
         this.coreCompetency = coreCompetency;
-//        nextId++;
     }
-
-    // TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields
-    //  match.
     @Override
     public boolean equals(Object o) {  // Two objects are equal if they have the same id.
         if (this == o) return true;
@@ -50,18 +39,18 @@ public class Job {
     @Override
     public String toString() {
 
-        if (employer.getValue() == "") {
-            this.employer.setValue(empty);
-        }
-        if (location.getValue() == "") {
-            this.location.setValue(empty);
-        }
-        if (positionType.getValue() == "") {
-            this.positionType.setValue(empty);
-        }
-        if (coreCompetency.getValue() == "") {
-            this.coreCompetency.setValue(empty);
-        }
+//        if (employer.getValue() == "") {
+//            this.employer.setValue(empty);
+//        }
+//        if (location.getValue() == "") {
+//            this.location.setValue(empty);
+//        }
+//        if (positionType.getValue() == "") {
+//            this.positionType.setValue(empty);
+//        }
+//        if (coreCompetency.getValue() == "") {
+//            this.coreCompetency.setValue(empty);
+//        }
 
         return lineSeparator() +
                 "ID: " + this.id + lineSeparator() +
@@ -71,9 +60,6 @@ public class Job {
                 "Position Type: " + this.positionType + lineSeparator() +
                 "Core Competency: " + this.coreCompetency + lineSeparator();
     }
-
-    // TODO: Add getters for each field EXCEPT nextId. Add setters for each field EXCEPT nextID
-    //  and id.
 
     // Getters and Setters
     public int getId() {
