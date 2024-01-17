@@ -26,7 +26,7 @@ public class JobTest {
     public void testJobsForEquality() {
         Job job1 = new Job("Web Graphics", new Employer("CodeLaunch"), new Location("LtS"), new PositionType("Front-end developer"), new CoreCompetency("Java"));
         Job job2 = new Job("Web Graphics", new Employer("CodeLaunch"), new Location("LtS"), new PositionType("Front-end developer"), new CoreCompetency("Java"));
-        assertEquals(job1.toString(), job2.toString());
+        assertNotEquals(job1, job2);
     }
 
     @Test
