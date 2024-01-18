@@ -77,8 +77,11 @@ public class AbstractTest {
                         "Location: %s\n" +
                         "Position Type: %s\n" +
                         "Core Competency: %s" +
-                        lineSeparator(), getJobId(job), getJobFieldString(job, "name", true), getJobFieldString(job, "employer", true), getJobFieldString(job, "location", true),
-                getJobFieldString(job, "positionType", true), getJobFieldString(job, "coreCompetency", true));
+                        lineSeparator(),
+                            getJobId(job), getJobFieldString(job, "name", true),
+                            getJobFieldString(job, "employer", true), getJobFieldString(job,
+                            "location", true), getJobFieldString(job, "positionType",
+                            true), getJobFieldString(job, "coreCompetency", true));
     }
 
 }
