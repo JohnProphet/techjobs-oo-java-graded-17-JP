@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="Task 6: 42 of 43 pass">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="Task 6: 41 of 43 pass" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -333,7 +330,23 @@
       <option name="project" value="LOCAL" />
       <updated>1705526553786</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Task 6: 41 of 43 pass">
+      <option name="closed" value="true" />
+      <created>1705528537620</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1705528537620</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Task 6: 41 of 43 pass">
+      <option name="closed" value="true" />
+      <created>1705528759440</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1705528759440</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -345,9 +358,9 @@
     <MESSAGE value="Task 5: 37 of 43 pass" />
     <MESSAGE value="Task 5: 40 of 43 pass" />
     <MESSAGE value="Task 6: 40 of 43 pass" />
-    <MESSAGE value="Task 6: 41 of 43 pass" />
     <MESSAGE value="Task 6: 42 of 43 pass" />
-    <option name="LAST_COMMIT_MESSAGE" value="Task 6: 42 of 43 pass" />
+    <MESSAGE value="Task 6: 41 of 43 pass" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task 6: 41 of 43 pass" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
