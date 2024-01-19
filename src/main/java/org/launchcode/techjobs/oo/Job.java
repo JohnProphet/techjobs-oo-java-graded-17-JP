@@ -51,11 +51,11 @@ public class Job {
             this.coreCompetency.setValue(empty);
         }
         return lineSeparator() +
-                "ID: " + this.id + lineSeparator() +
-                "Name: " + this.name + lineSeparator() +
-                "Employer: " + this.employer + lineSeparator() +
-                "Location: " + this.location + lineSeparator() +
-                "Position Type: " + this.positionType + lineSeparator() +
+                "ID: " + this.id + "\n" +
+                "Name: " + this.name + "\n" +
+                "Employer: " + this.employer + "\n" +
+                "Location: " + this.location + "\n" +
+                "Position Type: " + this.positionType + "\n" +
                 "Core Competency: " + this.coreCompetency + lineSeparator();
     }
 

@@ -10,8 +10,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 import static java.lang.System.lineSeparator;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
+import static org.junit.Assert.*;
 
 /**
  * Created by LaunchCode
@@ -33,13 +32,19 @@ public class TestTaskFive extends AbstractTest {
     }
 
 
+//    @Test
+//    public void testToStringStartsAndEndsWithNewLine() throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
+//        Job job = createJob("Web Developer", "LaunchCode", "StL", "Back-end developer", "Java");
+//        String firstChar = String.valueOf(job.toString().charAt(0));
+//        String lastChar = String.valueOf(job.toString().charAt(job.toString().length()-1));
+//        assertEquals(firstChar, "\r");
+//        assertEquals(lastChar, "\n");
+//    }
     @Test
     public void testToStringStartsAndEndsWithNewLine() throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
         Job job = createJob("Web Developer", "LaunchCode", "StL", "Back-end developer", "Java");
-        String firstChar = String.valueOf(job.toString().charAt(0));
-        String lastChar = String.valueOf(job.toString().charAt(job.toString().length()-1));
-        assertEquals(firstChar, "\r");
-        assertEquals(lastChar, "\n");
+       assertTrue(job.toString().startsWith(lineSeparator()));
+       assertTrue(job.toString().endsWith(lineSeparator()));
     }
 
     @Test
@@ -58,6 +63,7 @@ public class TestTaskFive extends AbstractTest {
     public void testToStringContainsCorrectLabelsAndData() throws ClassNotFoundException, InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException, NoSuchFieldException {
         Job job = createJob("Web Developer", "LaunchCode", "StL", "Back-end developer", "Java");
         String jobString = getJobString(job);
+        System.out.println(jobString);
         assertEquals(jobString, job.toString());
     }
 

@@ -63,22 +63,24 @@ public class JobTest {
     @Test
     public void testToStringHandlesEmptyField() {
         Job job1 = new Job("Web Developer", new Employer(""), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
-        String expectedString1 = lineSeparator() + "ID: " + job1.getId() + lineSeparator() +
-                "Name: Web Developer" + lineSeparator() +
-                "Employer: Data not available" + lineSeparator() +
-                "Location: Desert" + lineSeparator() +
-                "Position Type: Quality control" + lineSeparator() +
+        String expectedString1 = lineSeparator() +
+                "ID: " + job1.getId() + "\n" +
+                "Name: Web Developer" + "\n" +
+                "Employer: Data not available" + "\n" +
+                "Location: Desert" + "\n" +
+                "Position Type: Quality control" + "\n" +
                 "Core Competency: Persistence" + lineSeparator();
         assertEquals(job1.toString(), expectedString1);
     }
     @Test
     public void testToStringContainsCorrectLabelsAndData() {
         Job job1 = new Job("TestJob", new Employer("LaunchCode"), new Location("StL"), new PositionType("TestPosition"), new CoreCompetency("test"));
-        String expectedString2 = lineSeparator()+ "ID: " + job1.getId()+lineSeparator()+
-                "Name: TestJob" +lineSeparator()+
-                "Employer: LaunchCode" +lineSeparator()+
-                "Location: StL" +lineSeparator()+
-                "Position Type: TestPosition" +lineSeparator()+
+        String expectedString2 = lineSeparator()+
+                "ID: " + job1.getId() + "\n"+
+                "Name: TestJob" + "\n" +
+                "Employer: LaunchCode" + "\n" +
+                "Location: StL" + "\n" +
+                "Position Type: TestPosition" + "\n" +
                 "Core Competency: test" +lineSeparator();
         assertEquals(job1.toString(), expectedString2);
     }
